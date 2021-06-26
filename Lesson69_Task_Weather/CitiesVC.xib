@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CitiesVC" customModule="Lesson69_Task_Weather" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="nO3-8S-OVK" id="5VR-Kp-GBS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="daniel-ramirez-q4TfWtnz_xw-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="Cb2-8L-7fJ">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nO3-8S-OVK">
+                    <rect key="frame" x="0.0" y="64" width="414" height="798"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Cb2-8L-7fJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="19b-95-SDd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Cb2-8L-7fJ" secondAttribute="trailing" id="97p-9T-qs6"/>
+                <constraint firstItem="Cb2-8L-7fJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="NoS-Zw-91i"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="nO3-8S-OVK" secondAttribute="bottom" id="RBB-v2-DVv"/>
+                <constraint firstItem="nO3-8S-OVK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="cMW-Eg-EKP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nO3-8S-OVK" secondAttribute="trailing" id="fWX-TM-BGb"/>
+                <constraint firstAttribute="bottom" secondItem="Cb2-8L-7fJ" secondAttribute="bottom" id="igz-Fw-XN1"/>
+                <constraint firstItem="nO3-8S-OVK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="m5o-et-6wX"/>
+            </constraints>
+            <point key="canvasLocation" x="91" y="78"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="daniel-ramirez-q4TfWtnz_xw-unsplash" width="1804" height="2828"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
